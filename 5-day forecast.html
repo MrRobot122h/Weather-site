@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Header_Style.css">
+  <link rel="stylesheet" href="SubHead_Style.css">
+  <link rel="stylesheet" href="Main_Style.css">
+
+</head>
+<body>
+  <div class="header">
+    <h1 class="header-h1-text">MY WEATHER</h1>
+
+    <div class="Search">
+      <input class="search-bar-input js-search-bar-input" type="text" placeholder="Kyiv, Ukraine">
+
+      <button class="search-button" id="js-search-button">
+        <img class="search-icon" src="Icons/search.svg">
+      </button>
+    </div>
+  </div>
+  
+  <div class="subhead">
+    <div class="tab-link" style="margin-left: 50px;">
+      <a class="link" href="Today.html">Today</a> 
+    </div>
+  
+    <div class="tab-link active" style="padding-left: 25px;">
+      <a class="link" href="5-day forecast.html">5-day forecast</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <div class="week-weather-data js-week-weather-data">
+
+    </div>
+
+    <div class="hourly-weather-block">
+
+      <div class="hourly-title-block"><h3>HOURLY</h3></div>
+ 
+       <div class="hourly-weather-data-grid js-hourly-weather-data-grid">
+ 
+         <div class="hours-field">
+           TODAY
+         </div>
+ 
+         <div class="icons-field"> 
+           
+         </div>
+ 
+         <div class="description-field">
+           Forecast
+         </div>
+ 
+         <div class="temperature-field">
+           Temp (℃)
+         </div>
+ 
+         <div class="real-feel-temperature-field">
+           RealFeel
+         </div>
+         
+         <div class="wind-speed-field">
+           Wind(km/h)
+         </div>
+       </div>
+    </div>
+
+  </div>
+
+
+  <script src="5-day forecast.js"></script>
+</body>
+</html>

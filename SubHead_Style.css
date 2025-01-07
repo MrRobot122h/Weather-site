@@ -1,0 +1,36 @@
+.subhead {
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.tab-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100px;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.168);
+}
+
+.tab-link.active {
+  border-bottom: 3px solid rgb(11, 162, 162); 
+}
+
+.link {
+  color: azure;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link:hover {
+  color: lightcyan;
+}

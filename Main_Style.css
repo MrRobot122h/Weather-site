@@ -1,0 +1,164 @@
+.main-content {
+  position: relative; 
+  top: 132px;
+  width: 100%;
+  height: 100%; 
+  z-index: 1;
+  left: -8px;
+  display: grid;
+  grid-template-rows: auto auto; 
+  gap: 40px; 
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.block {
+  background-color: white; 
+}
+
+.current-weather-block, .hourly-weather-block{
+  background-color: white; 
+}
+
+.current-date-block, .hourly-title-block{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(18, 165, 165);
+}
+
+.current-weather-data-block{
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-icon{
+  height: 80px;
+}
+
+.weather-description{
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.weather-description-block, .current-temperature-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.current-temperature-block{
+  margin-top: 3px;
+}
+
+.temperature{
+  font-size: 65px;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+.real-feel-temperature{
+  font-size: 15px;
+  color: grey;
+  margin-top: 0;
+
+}
+
+.sun-data-block p {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0;
+  padding: 5px 0;
+  gap: 20px; 
+}
+
+.sun-data-block p span:first-child {
+  margin-right: 2px; 
+  font-weight: bold;
+}
+
+
+.hourly-weather-data-grid{
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-flow: column; 
+  gap: 10px;
+  padding: 40px;
+}
+
+.hourly-weather-data-grid p{
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.hourly-weather-icon{
+  height: 80px;
+  margin: 0;
+}
+
+.description-field, .temperature-field, .real-feel-temperature-field, .under-line {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+}
+
+.description-field, .wind-speed-field, .temperature-field, .real-feel-temperature-field, .under-line {
+  color: grey;
+}
+
+.week-weather-data{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  background-color: rgb(238, 233, 233); 
+}
+
+.week-day-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 0 1px black;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+
+.week-day-data:hover {
+  background-color: white; 
+  transform: scale(1.05); 
+}
+
+
+.current-day{
+  color: rgb(18, 165, 165);
+  margin: 0;
+}
+
+
+.current-date{
+  color: grey;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.temperature-h1{
+  margin: 0;
+  font-size: 50px;
+}
+
+.description-p{
+  margin-top: 0;
+  
+}
+
+
+.no-data-img{
+  height: 100px;
+  margin-left: 90px
+}
+
+.no-data-h1{
+  font-size: 80px;
+  margin-left: 90px;
+}
